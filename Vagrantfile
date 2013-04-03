@@ -17,4 +17,6 @@ Vagrant::Config.run do |config|
     puppet.manifests_path = "manifests"
     puppet.manifest_file  = "lamp.pp"
   end
+
+  config.ssh.timeout = 30
 end
